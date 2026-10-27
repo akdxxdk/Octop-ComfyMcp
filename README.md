@@ -2,7 +2,7 @@
 
 > 让 Octop 的 AI Agent 通过 MCP 协议直接驱动本地 ComfyUI 出图 / 出视频
 
-一套在 Windows 上实测跑通的集成方案：把 [ComfyUI](https://github.com/comfyuikon/ComfyUI)（秋叶 aki 整合包）接入 [Octop](https://pypi.org/project/octop/) 自托管 AI 平台，让 Octop 的 Agent 具备调用本地 GPU 生成图片和视频的能力。
+一套在 Windows 上实测跑通的集成方案：把 [ComfyUI](https://github.com/comfyanonymous/ComfyUI)（秋叶 aki 整合包）接入 [Octop](https://pypi.org/project/octop/) 自托管 AI 平台，让 Octop 的 Agent 具备调用本地 GPU 生成图片和视频的能力。
 
 全程本地推理，**不消耗任何云端额度**。
 
@@ -296,7 +296,7 @@ git diff --cached
 
 ## 🙏 致谢
 
-- [ComfyUI](https://github.com/comfyuikon/ComfyUI) —— 节点式生成工作流引擎
+- [ComfyUI](https://github.com/comfyanonymous/ComfyUI) —— 节点式生成工作流引擎
 - [Octop](https://pypi.org/project/octop/) —— 自托管多 Agent AI 平台
 - [comfy-mcp](https://github.com/Comfy-Org/comfy-mcp) —— ComfyUI 官方 MCP 服务器
 - 秋叶 aki 整合包 —— Windows 上一键式 ComfyUI 环境
