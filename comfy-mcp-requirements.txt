@@ -1,0 +1,17 @@
+# ============================================================
+# comfy-mcp isolated venv — pinned deployment manifest
+# ============================================================
+# WHY A SEPARATE VENV (hard requirement, not a suggestion):
+#   comfy-mcp 0.10.0            needs MCP SDK 2.x  -> mcp.server.mcpserver
+#   langchain-mcp-adapters       (used by Octop)     needs MCP SDK 1.x
+#                                               -> mcp.server.fastmcp.* (top-level import)
+# The two are mutually exclusive in ONE environment. Install comfy-mcp into
+# its OWN venv (see scripts\setup-comfymcp-venv.bat) and point the Octop
+# connector's `command` at that venv's comfy-mcp.exe.
+#
+# Usage:
+#   <COMFYMCP_VENV>\Scripts\python.exe -m pip install -r comfy-mcp-requirements.txt
+# ============================================================
+
+mcp==2.3.0
+comfy-mcp==0.10.0

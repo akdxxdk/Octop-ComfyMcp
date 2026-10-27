@@ -1,0 +1,88 @@
+# ============================================================
+#  Credentials & secrets -- NEVER commit
+# ============================================================
+config/comfyui-mcp-connector.json
+*.env
+.env
+.env.*
+.secrets/
+# The template below MUST be tracked (users copy it to .env); the patterns
+# above would otherwise swallow it via .env.*
+!.env.example
+secrets/
+secrets.json
+*凭据*
+*密码*
+*credential*
+*.key
+*.pem
+*.p12
+*.pfx
+
+# ============================================================
+#  Octop data / backups
+# ============================================================
+backups/
+backup*/
+*.db
+*.db-wal
+*.db-shm
+*.db.bak
+*-wal.bak
+*-shm.bak
+config.json.bak
+
+# ============================================================
+#  Models (huge binaries)
+# ============================================================
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.gguf
+*.ggml
+*.onnx
+*.engine
+*.plan
+
+# ============================================================
+#  Media artifacts
+# ============================================================
+*.mp4
+*.webm
+*.mov
+*.avi
+*.mkv
+*.gif
+*.wav
+*.mp3
+*.flac
+
+# ============================================================
+#  Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+.eggs/
+
+# ============================================================
+#  Editors / OS
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini

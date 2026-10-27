@@ -1,0 +1,32 @@
+{
+  "_comment": [
+    "Template — copy to comfyui-mcp-connector.json and fill in, OR set the",
+    "env vars below and run `python scripts\\setup-connector.py` (it expands ${VAR}).",
+    "",
+    "command      -> comfy-mcp.exe from the ISOLATED venv (NOT Octop's main env)",
+    "env.COMFY_BIN-> comfy.exe from the Octop conda env (comfy-cli lives there)",
+    "env.COMFYUI_URL -> only needed if ComfyUI is NOT on 127.0.0.1:8188",
+    "",
+    "Placeholders expanded from environment by setup-connector.py:",
+    "  ${COMFYMCP_VENV}     isolated venv dir (e.g. <COMFYMCP_VENV>)",
+    "  ${OCTOP_CONDA_ENV}   octop conda env dir (e.g. <OCTOP_CONDA_ENV>)",
+    "Define them in a local `.env` (copy from .env.example) — never commit real paths.",
+    "",
+    "This file is only an archive copy. It does NOT take effect on its own.",
+    "Write it into Octop via:  PUT /api/connectors/custom-mcp",
+    "or simply run:  python scripts\\setup-connector.py"
+  ],
+  "servers": {
+    "comfyui": {
+      "transport": "stdio",
+      "enabled": true,
+      "default_open": true,
+      "shared": true,
+      "display_name": "ComfyUI 本地生成",
+      "command": "${COMFYMCP_VENV}/Scripts/comfy-mcp.exe",
+      "env": {
+        "COMFY_BIN": "${OCTOP_CONDA_ENV}/Scripts/comfy.exe"
+      }
+    }
+  }
+}
