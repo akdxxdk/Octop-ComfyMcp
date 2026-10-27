@@ -30,12 +30,9 @@
 
 <table>
 <tr>
-<td align="center"><b>起始图</b><br><img src="assets/start_frame.jpg" width="260"></td>
-<td align="center"><b>第 1 帧</b><br><img src="assets/frame_0_0.jpg" width="260"></td>
-</tr>
-<tr>
-<td align="center"><b>中段 · 时空环坍缩</b><br><img src="assets/frame_2_121.jpg" width="260"></td>
-<td align="center"><b>末帧 · 奔跑回头</b><br><img src="assets/frame_4_242.jpg" width="260"></td>
+<td align="center"><b>起始图（视频首帧）</b><br><img src="assets/start_frame.jpg" width="240"></td>
+<td align="center"><b>中段 · 时空环坍缩</b><br><img src="assets/frame_2_121.jpg" width="240"></td>
+<td align="center"><b>末帧 · 奔跑回头</b><br><img src="assets/frame_4_242.jpg" width="240"></td>
 </tr>
 </table>
 
