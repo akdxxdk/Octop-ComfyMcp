@@ -257,27 +257,6 @@ H3 不是「写句话就能出片」的模型。官方的 H3 系统原本有个�
 
 ---
 
-## ⚠️ 上传 GitHub 前请务必检查
-
-本仓库的 `config/` 下只有 `.example.json` 占位符，**不含真实凭据、也不含任何本机绝对路径**：所有文档/脚本用 `<COMFYMCP_VENV>` / `<OCTOP_CONDA_ENV>` 等占位符，真实值由本地 `.env`（复制自 `.env.example`，已被 gitignore）提供，经 `scripts/setup-connector.py` 展开后写入 Octop。你自己的配置请放在本地且**不要提交**：
-
-```bash
-# 检查是否有敏感信息混入
-git status
-git diff --cached
-```
-
-`.gitignore` 已排除：
-
-- `config/comfyui-mcp-connector.json`（真实连接器配置）
-- 任何 `*凭据*`、`*.db`、`secrets/`、`backups/`
-- 模型文件（`*.safetensors`、`*.ckpt`、`*.gguf`）
-- 媒体成品（`*.mp4`、`*.webm`）
-
-**如果你的 Octop 密码还是默认随机密码，上传前请先改掉**（控制台 → 头像 → 账户设置 → 修改密码）。
-
----
-
 ## 📚 文档索引
 
 | 文档 | 适合谁 |
